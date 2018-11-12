@@ -1,0 +1,11 @@
+<p>
+<label class="label">Please Enter Username :&nbsp;</label>
+<input id="txtUsername" type="text" [(ngModel)]="username" (input)="validateUsernameToEnableButton($event)"/>
+</p>
+
+<p>
+  You entered the Username :
+  <i class="red-text">{{ username }}</i>
+</p>
+
+<button class="btn btn-primary" [disabled]="isResetButtonDisabled" (click)="resetUsername()">Reset Username</button>
