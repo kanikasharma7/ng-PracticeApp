@@ -6,5 +6,10 @@ import { Component} from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent{
-    
+    messageNumber:number=1234;
+    messageText:string="This is the success alert message !";
+    status:string="success";
+    getMessageStatus(){
+      return this.status;
+    }
 }
