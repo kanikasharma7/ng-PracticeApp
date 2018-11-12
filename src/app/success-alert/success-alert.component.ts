@@ -18,4 +18,8 @@ export class SuccessAlertComponent{
         this.allowNewAddition=true
       },2000);
     }
+
+    onAddButtonClick(){
+      this.messageText="New message rendered";
+    }
 }
