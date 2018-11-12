@@ -22,4 +22,8 @@ export class SuccessAlertComponent{
     onAddButtonClick(){
       this.messageText="New message rendered";
     }
+
+    onInputText(event:any){
+      this.messageText=(<HTMLInputElement>event.target).value;
+    }
 }

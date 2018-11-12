@@ -1,4 +1,5 @@
 <div class="alert alert-success">
-  <button class="btn btn-success" [disabled]="!allowNewAddition" (click)="onAddButtonClick()">Add</button>
+  <input type="text" (input)="onInputText($event)"/>&nbsp;
+  <button class="btn btn-success" [disabled]="!allowNewAddition" (click)="onAddButtonClick()">Add Deafult new text</button>
     <h3 class="orangered">{{getMessageStatus()}}-{{ messageNumber }} - {{ messageText }}</h3>
   </div>
