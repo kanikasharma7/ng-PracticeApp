@@ -10,6 +10,8 @@ export class SuccessAlertComponent{
     messageText:string="This is the success alert message !";
     status:string="success";
     allowNewAddition:boolean=false;
+
+    
     getMessageStatus(){
       return this.status;
     }

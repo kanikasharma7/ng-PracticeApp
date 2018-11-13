@@ -1,3 +1,9 @@
 <div class="alert alert-warning">
-  <h3 class="bold">This is the warning alert message !</h3>
+  <button class="btn btn-lg btn-primary" (click)="onButtonClick()">Click me</button>
+  <h3 class="bold" *ngIf="shouldDisplayMessage;else displayTemplate">This is the warning alert message !</h3>
+  <h2 [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{'white-text':shouldDisplayMessage===true}">Hello there</h2>
 </div>
+
+<ng-template #displayTemplate>
+<p>This is a tempalte message.</p>
+</ng-template>

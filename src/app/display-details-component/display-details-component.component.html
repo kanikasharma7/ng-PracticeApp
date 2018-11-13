@@ -1,0 +1,9 @@
+<div>
+ <button class="btn btn-lg btn-primary" (click)="toggleDetails()">{{buttonText}}</button>
+ <p *ngIf="displayDetails">Secret Password='tuna'</p>
+ <h2>Log:</h2>
+ <div *ngFor="let log of logs" [ngClass]="{'paint-log':log.counter>4}">
+   Click {{log.counter}} at {{log.date}}
+ </div>
+</div>
+
